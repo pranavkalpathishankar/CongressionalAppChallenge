@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CACCongressionalAppChallenge.MainPage">
 
-    <Grid RowDefinitions="Auto,*"
+    <Grid RowDefinitions="Auto,Auto,*"
           Padding="0">
 
         <Label 
@@ -14,59 +14,66 @@
             Margin="20"
             HorizontalOptions="Center"/>
 
-        <ScrollView Grid.Row="1">
+        <SearchBar Grid.Row="1"
+                   x:Name="StateSearchBar"
+                   Placeholder="Search states..."
+                   SearchButtonPressed="OnSearchButtonPressed"
+                   TextChanged="OnSearchTextChanged"
+                   Margin="20,0,20,10"/>
+
+        <ScrollView Grid.Row="2">
             <VerticalStackLayout Padding="20" Spacing="10">
 
-                <Button Text="Alabama Universities" HeightRequest="50"/>
-                <Button Text="Alaska Universities" HeightRequest="50"/>
-                <Button Text="Arizona Universities" HeightRequest="50"/>
-                <Button Text="Arkansas Universities" HeightRequest="50"/>
-                <Button Text="California Universities" HeightRequest="50"/>
-                <Button Text="Colorado Universities" HeightRequest="50"/>
-                <Button Text="Connecticut Universities" HeightRequest="50"/>
-                <Button Text="Delaware Universities" HeightRequest="50"/>
-                <Button Text="Florida Universities" HeightRequest="50"/>
-                <Button Text="Georgia Universities" HeightRequest="50"/>
-                <Button Text="Hawaii Universities" HeightRequest="50"/>
-                <Button Text="Idaho Universities" HeightRequest="50"/>
-                <Button Text="Illinois Universities" HeightRequest="50"/>
-                <Button Text="Indiana Universities" HeightRequest="50"/>
-                <Button Text="Iowa Universities" HeightRequest="50"/>
-                <Button Text="Kansas Universities" HeightRequest="50"/>
-                <Button Text="Kentucky Universities" HeightRequest="50"/>
-                <Button Text="Louisiana Universities" HeightRequest="50"/>
-                <Button Text="Maine Universities" HeightRequest="50"/>
-                <Button Text="Maryland Universities" HeightRequest="50"/>
-                <Button Text="Massachusetts Universities" HeightRequest="50"/>
-                <Button Text="Michigan Universities" HeightRequest="50"/>
-                <Button Text="Minnesota Universities" HeightRequest="50"/>
-                <Button Text="Mississippi Universities" HeightRequest="50"/>
-                <Button Text="Missouri Universities" HeightRequest="50"/>
-                <Button Text="Montana Universities" HeightRequest="50"/>
-                <Button Text="Nebraska Universities" HeightRequest="50"/>
-                <Button Text="Nevada Universities" HeightRequest="50"/>
-                <Button Text="New Hampshire Universities" HeightRequest="50"/>
-                <Button Text="New Jersey Universities" HeightRequest="50"/>
-                <Button Text="New Mexico Universities" HeightRequest="50"/>
-                <Button Text="New York Universities" HeightRequest="50"/>
-                <Button Text="North Carolina Universities" HeightRequest="50"/>
-                <Button Text="North Dakota Universities" HeightRequest="50"/>
-                <Button Text="Ohio Universities" HeightRequest="50"/>
-                <Button Text="Oklahoma Universities" HeightRequest="50"/>
-                <Button Text="Oregon Universities" HeightRequest="50"/>
-                <Button Text="Pennsylvania Universities" HeightRequest="50"/>
-                <Button Text="Rhode Island Universities" HeightRequest="50"/>
-                <Button Text="South Carolina Universities" HeightRequest="50"/>
-                <Button Text="South Dakota Universities" HeightRequest="50"/>
-                <Button Text="Tennessee Universities" HeightRequest="50"/>
-                <Button Text="Texas Universities" HeightRequest="50"/>
-                <Button Text="Utah Universities" HeightRequest="50"/>
-                <Button Text="Vermont Universities" HeightRequest="50"/>
-                <Button Text="Virginia Universities" HeightRequest="50"/>
-                <Button Text="Washington Universities" HeightRequest="50"/>
-                <Button Text="West Virginia Universities" HeightRequest="50"/>
-                <Button Text="Wisconsin Universities" HeightRequest="50"/>
-                <Button Text="Wyoming Universities" HeightRequest="50"/>
+                <Button x:Name="AlabamaButton" Text="{Binding AlabamaText}" HeightRequest="50"/>
+                <Button x:Name="AlaskaButton" Text="{Binding AlaskaText}" HeightRequest="50"/>
+                <Button x:Name="ArizonaButton" Text="{Binding ArizonaText}" HeightRequest="50"/>
+                <Button x:Name="ArkansasButton" Text="{Binding ArkansasText}" HeightRequest="50"/>
+                <Button x:Name="CaliforniaButton" Text="{Binding CaliforniaText}" HeightRequest="50"/>
+                <Button x:Name="ColoradoButton" Text="{Binding ColoradoText}" HeightRequest="50"/>
+                <Button x:Name="ConnecticutButton" Text="{Binding ConnecticutText}" HeightRequest="50"/>
+                <Button x:Name="DelawareButton" Text="{Binding DelawareText}" HeightRequest="50"/>
+                <Button x:Name="FloridaButton" Text="{Binding FloridaText}" HeightRequest="50"/>
+                <Button x:Name="GeorgiaButton" Text="{Binding GeorgiaText}" HeightRequest="50"/>
+                <Button x:Name="HawaiiButton" Text="{Binding HawaiiText}" HeightRequest="50"/>
+                <Button x:Name="IdahoButton" Text="{Binding IdahoText}" HeightRequest="50"/>
+                <Button x:Name="IllinoisButton" Text="{Binding IllinoisText}" HeightRequest="50"/>
+                <Button x:Name="IndianaButton" Text="{Binding IndianaText}" HeightRequest="50"/>
+                <Button x:Name="IowaButton" Text="{Binding IowaText}" HeightRequest="50"/>
+                <Button x:Name="KansasButton" Text="{Binding KansasText}" HeightRequest="50"/>
+                <Button x:Name="KentuckyButton" Text="{Binding KentuckyText}" HeightRequest="50"/>
+                <Button x:Name="LouisianaButton" Text="{Binding LouisianaText}" HeightRequest="50"/>
+                <Button x:Name="MaineButton" Text="{Binding MaineText}" HeightRequest="50"/>
+                <Button x:Name="MarylandButton" Text="{Binding MarylandText}" HeightRequest="50"/>
+                <Button x:Name="MassachusettsButton" Text="{Binding MassachusettsText}" HeightRequest="50"/>
+                <Button x:Name="MichiganButton" Text="{Binding MichiganText}" HeightRequest="50"/>
+                <Button x:Name="MinnesotaButton" Text="{Binding MinnesotaText}" HeightRequest="50"/>
+                <Button x:Name="MississippiButton" Text="{Binding MississippiText}" HeightRequest="50"/>
+                <Button x:Name="MissouriButton" Text="{Binding MissouriText}" HeightRequest="50"/>
+                <Button x:Name="MontanaButton" Text="{Binding MontanaText}" HeightRequest="50"/>
+                <Button x:Name="NebraskaButton" Text="{Binding NebraskaText}" HeightRequest="50"/>
+                <Button x:Name="NevadaButton" Text="{Binding NevadaText}" HeightRequest="50"/>
+                <Button x:Name="NewHampshireButton" Text="{Binding NewHampshireText}" HeightRequest="50"/>
+                <Button x:Name="NewJerseyButton" Text="{Binding NewJerseyText}" HeightRequest="50"/>
+                <Button x:Name="NewMexicoButton" Text="{Binding NewMexicoText}" HeightRequest="50"/>
+                <Button x:Name="NewYorkButton" Text="{Binding NewYorkText}" HeightRequest="50"/>
+                <Button x:Name="NorthCarolinaButton" Text="{Binding NorthCarolinaText}" HeightRequest="50"/>
+                <Button x:Name="NorthDakotaButton" Text="{Binding NorthDakotaText}" HeightRequest="50"/>
+                <Button x:Name="OhioButton" Text="{Binding OhioText}" HeightRequest="50"/>
+                <Button x:Name="OklahomaButton" Text="{Binding OklahomaText}" HeightRequest="50"/>
+                <Button x:Name="OregonButton" Text="{Binding OregonText}" HeightRequest="50"/>
+                <Button x:Name="PennsylvaniaButton" Text="{Binding PennsylvaniaText}" HeightRequest="50"/>
+                <Button x:Name="RhodeIslandButton" Text="{Binding RhodeIslandText}" HeightRequest="50"/>
+                <Button x:Name="SouthCarolinaButton" Text="{Binding SouthCarolinaText}" HeightRequest="50"/>
+                <Button x:Name="SouthDakotaButton" Text="{Binding SouthDakotaText}" HeightRequest="50"/>
+                <Button x:Name="TennesseeButton" Text="{Binding TennesseeText}" HeightRequest="50"/>
+                <Button x:Name="TexasButton" Text="{Binding TexasText}" HeightRequest="50"/>
+                <Button x:Name="UtahButton" Text="{Binding UtahText}" HeightRequest="50"/>
+                <Button x:Name="VermontButton" Text="{Binding VermontText}" HeightRequest="50"/>
+                <Button x:Name="VirginiaButton" Text="{Binding VirginiaText}" HeightRequest="50"/>
+                <Button x:Name="WashingtonButton" Text="{Binding WashingtonText}" HeightRequest="50"/>
+                <Button x:Name="WestVirginiaButton" Text="{Binding WestVirginiaText}" HeightRequest="50"/>
+                <Button x:Name="WisconsinButton" Text="{Binding WisconsinText}" HeightRequest="50"/>
+                <Button x:Name="WyomingButton" Text="{Binding WyomingText}" HeightRequest="50"/>
 
             </VerticalStackLayout>
         </ScrollView>
