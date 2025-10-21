@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CACCongressionalAppChallenge.TexasUniversitiesPage"
+             Title="Texas Universities">
+
+	<Grid RowDefinitions="Auto,Auto,*" Padding="0">
+
+		<Label
+            Grid.Row="0"
+            Text="Texas Universities"
+            FontSize="28"
+            FontAttributes="Bold"
+            Margin="20"
+            HorizontalOptions="Center"/>
+
+		<SearchBar Grid.Row="1"
+                   x:Name="UniversitySearchBar"
+                   Placeholder="Search universities..."
+                   TextChanged="OnSearchTextChanged"
+                   Margin="20,0,20,10"/>
+
+		<ScrollView Grid.Row="2">
+			<VerticalStackLayout Padding="20" Spacing="10">
+
+				<!-- Public Universities -->
+				<Label Text="Public Universities"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="0,10,0,10"/>
+
+				<Button x:Name="UTAustinButton"
+                        Text="University of Texas at Austin"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.utexas.edu/about/common-data-set"/>
+
+				<Button x:Name="TexasAMButton"
+                        Text="Texas A&amp;M University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://ir.tamu.edu/Common-Data-Set"/>
+
+				<Button x:Name="UTDallasButton"
+                        Text="University of Texas at Dallas"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.utdallas.edu/fact-book/common-data-set/"/>
+
+				<Button x:Name="UHoustonButton"
+                        Text="University of Houston"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.uh.edu/ir/reports/statistical-handbook/common-data-set/"/>
+
+				<Button x:Name="TexasTechButton"
+                        Text="Texas Tech University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.depts.ttu.edu/ir/CDS/"/>
+
+				<Button x:Name="UTArlingtonButton"
+                        Text="University of Texas at Arlington"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.uta.edu/oit/about/data-governance/common-data-set"/>
+
+				<Button x:Name="UTSanAntonioButton"
+                        Text="University of Texas at San Antonio"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.utsa.edu/strategicplan/reporting/common-data-set.html"/>
+
+				<Button x:Name="UTElPasoButton"
+                        Text="University of Texas at El Paso"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.utep.edu/ir/common-data-set.html"/>
+
+				<Button x:Name="TexasStateButton"
+                        Text="Texas State University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.txstate.edu/irp/planning-information/common-data-set.html"/>
+
+				<Button x:Name="UNorthTexasButton"
+                        Text="University of North Texas"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://ir.unt.edu/common-data-set"/>
+
+				<Button x:Name="TexasWomanButton"
+                        Text="Texas Woman's University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.twu.edu/about/common-data-set/"/>
+
+				<Button x:Name="SamHoustonButton"
+                        Text="Sam Houston State University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.shsu.edu/dept/institutional-research/cds"/>
+
+				<Button x:Name="StephenFAustinButton"
+                        Text="Stephen F. Austin State University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.sfasu.edu/ir/common-data-set"/>
+
+				<Button x:Name="TarletonButton"
+                        Text="Tarleton State University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.tarleton.edu/institutionalresearch/common-data-set.html"/>
+
+				<Button x:Name="PrairieViewButton"
+                        Text="Prairie View A&amp;M University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.pvamu.edu/ir/common-data-set/"/>
+
+				<Button x:Name="TexasSouthernButton"
+                        Text="Texas Southern University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.tsu.edu/about/institutional-research/common-data-set.html"/>
+
+				<!-- Private Universities -->
+				<Label Text="Private Universities"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="0,20,0,10"/>
+
+				<Button x:Name="RiceButton"
+                        Text="Rice University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://oir.rice.edu/common-data-set"/>
+
+				<Button x:Name="SMUButton"
+                        Text="Southern Methodist University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.smu.edu/ir/CommonDataSet"/>
+
+				<Button x:Name="TCUButton"
+                        Text="Texas Christian University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://ir.tcu.edu/common-data-set/"/>
+
+				<Button x:Name="BaylorButton"
+                        Text="Baylor University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.baylor.edu/ir/common_data_set/"/>
+
+				<Button x:Name="TrinityButton"
+                        Text="Trinity University"
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.trinity.edu/about/institutional-research/common-data-set"/>
+
+			</VerticalStackLayout>
+		</ScrollView>
+	</Grid>
+
+</ContentPage>

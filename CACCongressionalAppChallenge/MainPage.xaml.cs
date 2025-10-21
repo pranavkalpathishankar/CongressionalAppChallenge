@@ -57,6 +57,14 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         BindingContext = this;
+
+        // Wire up the Texas button click event
+        TexasButton.Clicked += OnTexasButtonClicked;
+    }
+
+    private async void OnTexasButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new TexasUniversitiesPage());
     }
 
     private void OnSearchButtonPressed(object sender, EventArgs e)
