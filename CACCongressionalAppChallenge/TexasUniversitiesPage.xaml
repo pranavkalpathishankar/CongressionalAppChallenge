@@ -52,7 +52,7 @@
                         Text="University of Texas at Arlington" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.uta.edu/academics/academic-affairs/institutional-research/common-data-set"/>
+                        CommandParameter="https://www.uta.edu/administration/analytics/reports"/>
 
                 <Button x:Name="UTSanAntonioButton"
                         Text="University of Texas at San Antonio" 
@@ -64,25 +64,25 @@
                         Text="University of Texas at El Paso" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.utep.edu/institutional-analysis/institutional-research/common-data-set.html"/>
+                        CommandParameter="https://www.utep.edu/planning/cierp/resources/common-data-sets.html"/>
 
                 <Button x:Name="UTPermianBasinButton"
                         Text="University of Texas Permian Basin" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.utpb.edu/"/>
+                        CommandParameter="https://www.utpb.edu/university-offices/institutional-research-and-effectiveness/common-dataset/"/>
 
                 <Button x:Name="UTRioGrandeValleyButton"
                         Text="University of Texas Rio Grande Valley" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.utrgv.edu/"/>
+                        CommandParameter="https://www.utrgv.edu/sair/data-reports/reports-archive/index.htm/"/>
 
                 <Button x:Name="UTTylerButton"
                         Text="University of Texas at Tyler" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.uttyler.edu/"/>
+                        CommandParameter="https://www.uttyler.edu/offices/information-analysis/files/cds-2024-2025.pdf"/>
 
                 <!-- Texas A&M System -->
                 <Label Text="Texas A&amp;M System" 
@@ -100,7 +100,7 @@
                         Text="Prairie View A&amp;M University" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.pvamu.edu/ir/files/"/>
+                        CommandParameter="https://www.pvamu.edu/ir/pvamu-data-3/2016-2020-fact-book/common-data-set/"/>
 
                 <Button x:Name="TexasAMCorpusButton"
                         Text="Texas A&amp;M University-Corpus Christi" 
