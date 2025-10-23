@@ -46,7 +46,7 @@
                         Text="University of Texas at Dallas" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.utdallas.edu/irp/cds/"/>
+                        CommandParameter="https://oisds.utdallas.edu/common-data-set"/>
 
                 <Button x:Name="UTArlingtonButton"
                         Text="University of Texas at Arlington" 
@@ -85,7 +85,7 @@
                         CommandParameter="https://www.uttyler.edu/"/>
 
                 <!-- Texas A&M System -->
-                <Label Text="Texas A&M System" 
+                <Label Text="Texas A&amp;M System" 
                        FontSize="18" 
                        FontAttributes="Bold" 
                        Margin="0,10,0,5"/>
@@ -94,7 +94,7 @@
                         Text="Texas A&amp;M University" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://abpa.tamu.edu/reports-catalog/student"/>
+                        CommandParameter="https://abpa.tamu.edu/getattachment/439f54fe-1105-48af-955a-405775f80872/CDS-2024-2025_TexasA-M.pdf"/>    
 
                 <Button x:Name="PrairieViewButton"
                         Text="Prairie View A&amp;M University" 
