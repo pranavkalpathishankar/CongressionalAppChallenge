@@ -59,7 +59,12 @@ public partial class MainPage : ContentPage
         BindingContext = this;
 
         // Wire up the Texas button click event
+        AlabamaButton.Clicked += OnAlabamaButtonClicked;
         TexasButton.Clicked += OnTexasButtonClicked;
+    }
+    private async void OnAlabamaButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new AlabamaUniversitiesPage());
     }
 
     private async void OnTexasButtonClicked(object sender, EventArgs e)
