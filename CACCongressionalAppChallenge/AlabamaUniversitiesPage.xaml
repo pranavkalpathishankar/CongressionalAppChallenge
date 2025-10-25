@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CACCongressionalAppChallenge.AlabamaUniversitiesPage"
+             Title="Alabama Universities">
+
+    <Grid RowDefinitions="Auto,Auto,*" Padding="0">
+
+        <Label 
+            Grid.Row="0"
+            Text="Alabama Universities" 
+            FontSize="28" 
+            FontAttributes="Bold" 
+            Margin="20"
+            HorizontalOptions="Center"/>
+
+        <SearchBar Grid.Row="1"
+                   x:Name="UniversitySearchBar"
+                   Placeholder="Search universities..."
+                   TextChanged="OnSearchTextChanged"
+                   Margin="20,0,20,10"/>
+
+        <ScrollView Grid.Row="2" x:Name="MainScrollView">
+            <VerticalStackLayout Padding="20" Spacing="10">
+
+                <!-- PUBLIC UNIVERSITIES -->
+                <Label Text="Public Universities" 
+                       FontSize="22" 
+                       FontAttributes="Bold" 
+                       TextColor="DarkBlue"
+                       Margin="0,10,0,10"/>
+
+                <!-- University of Alabama System -->
+                <Label Text="University of Alabama System" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       Margin="0,10,0,5"/>
+
+                <Button x:Name="UAlabamaButton"
+                        Text="University of Alabama" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://oira.ua.edu/new/reports/?Report+Type%5B0%5D%5B0%5D=Common+Data+Set"/>
+
+                <Button x:Name="UABButton"
+                        Text="University of Alabama at Birmingham" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.uab.edu/institutionaleffectiveness/data-library/common-data-set"/>
+
+                <Button x:Name="UAHButton"
+                        Text="University of Alabama in Huntsville" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.uah.edu/academic-affairs/offices/oirea/common-data-sets"/>
+
+                <!-- Auburn System -->
+                <Label Text="Auburn System" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       Margin="0,10,0,5"/>
+
+                <Button x:Name="AuburnButton"
+                        Text="Auburn University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://auburn.edu/administration/ir/common-data-set/index.html"/>
+
+                <Button x:Name="AuburnMontgomeryButton"
+                        Text="Auburn University at Montgomery" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.aum.edu/institutional-effectiveness/institutional-research/aum-data/"/>
+
+                <!-- Other Public Universities -->
+                <Label Text="Other Public Universities" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       Margin="0,10,0,5"/>
+
+                <Button x:Name="TroyButton"
+                        Text="Troy University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.troy.edu/about-us/offices-departments/institutional-research-planning-effectiveness/irpe-research/common-data-set.html"/>
+
+                <Button x:Name="USouthAlabamaButton"
+                        Text="University of South Alabama" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.southalabama.edu/departments/institutionalresearch/commondataset.html"/>
+
+                <Button x:Name="UNorthAlabamaButton"
+                        Text="University of North Alabama" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.una.edu/ir/common-data-set.html"/>
+
+                <Button x:Name="UAlabamaHuntsvilleButton"
+                        Text="University of Alabama in Huntsville" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.uah.edu/academic-affairs/offices/oirea/common-data-sets"/>
+
+                <Button x:Name="JacksonvilleStateButton"
+                        Text="Jacksonville State University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.jsu.edu/ir/common-data-set.html"/>
+
+                <Button x:Name="AlabamaStateButton"
+                        Text="Alabama State University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.alasu.edu/_qa/institutional-data.php"/>
+
+                <Button x:Name="AlabamaAMButton"
+                        Text="Alabama A&amp;M University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.aamu.edu/academics/colleges-schools/institutional-research-and-planning/"/>
+
+                <Button x:Name="TuskegeeButton"
+                        Text="Tuskegee University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.tuskegee.edu/about-us/institutional-research"/>
+
+                <Button x:Name="UWestAlabamaButton"
+                        Text="University of West Alabama" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.uwa.edu/ir/common-data-set"/>
+
+                <Button x:Name="UMontevalloButton"
+                        Text="University of Montevallo" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.montevallo.edu/about-um/university-offices-divisions/institutional-research/common-data-set/"/>
+
+                <!-- PRIVATE UNIVERSITIES -->
+                <Label Text="Private Universities" 
+                       FontSize="22" 
+                       FontAttributes="Bold" 
+                       TextColor="DarkGreen"
+                       Margin="0,20,0,10"/>
+
+                <!-- Major Private Universities -->
+                <Label Text="Major Private Universities" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       Margin="0,10,0,5"/>
+
+                <Button x:Name="SamfordButton"
+                        Text="Samford University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.samford.edu/departments/institutional-effectiveness/common-data-set"/>
+
+                <Button x:Name="SpringHillButton"
+                        Text="Spring Hill College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.shc.edu/institutional-research/common-data-set/"/>
+
+                <Button x:Name="BirminghamSouthernButton"
+                        Text="Birmingham-Southern College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.bsc.edu/institutional-research/"/>
+
+                <Button x:Name="HuntingdonButton"
+                        Text="Huntingdon College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.huntingdon.edu/institutional-research/"/>
+
+                <Button x:Name="MilesButton"
+                        Text="Miles College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.miles.edu/about/institutional-research/"/>
+
+                <Button x:Name="OakwoodButton"
+                        Text="Oakwood University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.oakwood.edu/institutional-effectiveness"/>
+
+                <Button x:Name="JudsonButton"
+                        Text="Judson College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.judsoncollege.edu/"/>
+
+                <Button x:Name="StiletmanButton"
+                        Text="Stillman College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.stillman.edu/institutional-research/"/>
+
+                <!-- Christian/Religious Universities -->
+                <Label Text="Christian &amp; Religious Universities" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       Margin="0,10,0,5"/>
+
+                <Button x:Name="FaulknerButton"
+                        Text="Faulkner University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.faulkner.edu/institutional-research/"/>
+
+                <Button x:Name="HeritageChristianButton"
+                        Text="Heritage Christian University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.hcu.edu/about/institutional-research/"/>
+
+                <Button x:Name="SoutheasternBibleButton"
+                        Text="Southeastern Bible College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.sebc.edu/"/>
+
+                <Button x:Name="UMobileButton"
+                        Text="University of Mobile" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.umobile.edu/institutional-research/common-data-set/"/>
+
+                <!-- Liberal Arts Colleges -->
+                <Label Text="Liberal Arts &amp; Other Private Colleges" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       Margin="0,10,0,5"/>
+
+                <Button x:Name="BirminghamButton"
+                        Text="Birmingham College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.bhm.edu/"/>
+
+                <Button x:Name="ColumbiaSouthernButton"
+                        Text="Columbia Southern University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.columbiasouthern.edu/institutional-research"/>
+
+                <Button x:Name="AmridgeButton"
+                        Text="Amridge University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.amridgeuniversity.edu/"/>
+
+                <Button x:Name="AthensStateButton"
+                        Text="Athens State University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.athens.edu/institutional-research/common-data-set/"/>
+
+                <Button x:Name="TalladegaButton"
+                        Text="Talladega College" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.talladega.edu/institutional-research/"/>
+
+                <Button x:Name="SelmaButton"
+                        Text="Selma University" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.selmauniversity.edu/"/>
+
+                <Button x:Name="ConcordiaButton"
+                        Text="Concordia College Alabama" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.ccal.edu/"/>
+
+                <Button x:Name="UnitedStatesButton"
+                        Text="United States Sports Academy" 
+                        HeightRequest="50"
+                        Clicked="OnUniversityClicked"
+                        CommandParameter="https://www.ussa.edu/institutional-research/"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
