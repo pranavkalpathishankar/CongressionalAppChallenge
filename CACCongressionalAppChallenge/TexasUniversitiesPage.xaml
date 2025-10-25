@@ -70,13 +70,13 @@
                         Text="University of Texas Permian Basin" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.utpb.edu/university-offices/institutional-research-and-effectiveness/common-dataset/"/>
+                        CommandParameter="https://www.utpb.edu/university-offices/institutional-research-and-effectiveness/common-dataset"/>
 
                 <Button x:Name="UTRioGrandeValleyButton"
                         Text="University of Texas Rio Grande Valley" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.utrgv.edu/sair/data-reports/reports-archive/index.htm/"/>
+                        CommandParameter="https://www.utrgv.edu/sair/data-reports/reports-archive/index.htm"/>
 
                 <Button x:Name="UTTylerButton"
                         Text="University of Texas at Tyler" 
@@ -100,37 +100,37 @@
                         Text="Prairie View A&amp;M University" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.pvamu.edu/ir/pvamu-data-3/2016-2020-fact-book/common-data-set/"/>
+                        CommandParameter="https://www.pvamu.edu/ir/pvamu-data-3/2016-2020-fact-book/common-data-set"/>
 
                 <Button x:Name="TexasAMCorpusButton"
                         Text="Texas A&amp;M University-Corpus Christi" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.tamucc.edu/"/>
+                        CommandParameter="https://www.tamucc.edu/president/pir/common_data_set.php"/>
 
                 <Button x:Name="TexasAMKingsvilleButton"
                         Text="Texas A&amp;M University-Kingsville" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.tamuk.edu/"/>
+                        CommandParameter="https://www.tamuk.edu/pes/institutional-data/CDS-reporting.html"/>
 
                 <Button x:Name="TexasAMCommerceButton"
                         Text="Texas A&amp;M University-Commerce" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.tamuc.edu/"/>
+                        CommandParameter="https://www.etamu.edu/wp-content/uploads/2023/03/CDS_2022-2023-2.pdf"/>
 
                 <Button x:Name="TexasAMTexarkanaButton"
                         Text="Texas A&amp;M University-Texarkana" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.tamut.edu/"/>
+                        CommandParameter="https://www.tamut.edu/academic-affairs/ier/university-resources.html"/>
 
                 <Button x:Name="TexasAMInternationalButton"
                         Text="Texas A&amp;M International University" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.tamiu.edu/"/>
+                        CommandParameter="https://www.tamiu.edu"/>
 
                 <Button x:Name="TarletonButton"
                         Text="Tarleton State University" 
@@ -142,7 +142,7 @@
                         Text="West Texas A&amp;M University" 
                         HeightRequest="50"
                         Clicked="OnUniversityClicked"
-                        CommandParameter="https://www.wtamu.edu/"/>
+                        CommandParameter="https://www.wtamu.edu/_files/docs/academics/Institutional%20Research/CDS.pdf"/>
 
                 <!-- Texas Tech System -->
                 <Label Text="Texas Tech System" 
